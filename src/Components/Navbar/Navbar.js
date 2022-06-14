@@ -4,7 +4,6 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
 import InputBase from '@mui/material/InputBase';
 import Badge from '@mui/material/Badge';
 import MenuItem from '@mui/material/MenuItem';
@@ -167,38 +166,38 @@ export default function PrimarySearchAppBar() {
           >
             <MenuIcon />
           </IconButton>
-          <Typography
+          <IconButton
             variant="h6"
             noWrap
             component="div"
-            sx={{ display: { xs: 'none', sm: 'block' } }}
+            sx={{ display: { xs: 'none', sm: 'block', color: "white" } }}
           >
             Home
-          </Typography>
-          <Typography
+          </IconButton>
+          <IconButton
             variant="h6"
             noWrap
             component="div"
-            sx={{ display: { xs: 'none', sm: 'block', marginLeft: "1rem" } }}
+            sx={{ display: { xs: 'none', sm: 'block', color: "white" } }}
           >
             Store
-          </Typography>
-          <Typography
+          </IconButton>
+          <IconButton
             variant="h6"
             noWrap
             component="div"
-            sx={{ display: { xs: 'none', sm: 'block', marginLeft: "1rem" } }}
+            sx={{ display: { xs: 'none', sm: 'block', color: "white" } }}
           >
             Personal Training
-          </Typography>
-          <Typography
+          </IconButton>
+          <IconButton
             variant="h6"
             noWrap
             component="div"
-            sx={{ display: { xs: 'none', sm: 'block', marginLeft: "1rem" } }}
+            sx={{ display: { xs: 'none', sm: 'block', color: "white" } }}
           >
             About
-          </Typography>
+          </IconButton>
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
             <Search>
