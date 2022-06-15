@@ -1,0 +1,27 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  padding: 10px;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+.footer__label {
+  color: white !important;
+  cursor: pointer;
+  font-size: 12px;
+  margin-top: .2rem !important;
+  text-decoration: none !important;
+}
+
+.footer__links__icons {
+  color: white !important;
+  cursor: pointer;
+  margin: 0 .5rem !important;
+}
+
+.footer__links {
+  flex-wrap: wrap;
+}

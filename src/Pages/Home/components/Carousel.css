@@ -1,0 +1,10 @@
+.slider {
+  margin-top: 1.5rem;
+}
+
+.slider__images {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
