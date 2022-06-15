@@ -32,7 +32,22 @@
 
 .personlTraining__registrationForm {
   display: flex;
-  flex-direction: row; }
-  .personlTraining__registrationForm__formFields form {
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .personlTraining__registrationForm__formFields {
+    width: 50%; }
+    .personlTraining__registrationForm__formFields form {
+      padding: 90px 130px;
+      display: flex;
+      flex-direction: column; }
+    .personlTraining__registrationForm__formFields__inputField {
+      width: 100% !important; }
+  .personlTraining__registrationForm__formAvatar {
+    width: 50%;
     display: flex;
-    flex-direction: column; }
+    justify-content: center;
+    align-items: center; }
+    .personlTraining__registrationForm__formAvatar img {
+      width: 20%;
+      height: 150px;
+      border-radius: 55%; }

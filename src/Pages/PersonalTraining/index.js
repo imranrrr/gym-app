@@ -20,7 +20,7 @@ function PersonalTraining() {
             <div className="personlTraining__registrationForm">
                 <div className="personlTraining__registrationForm__formFields">
                     <form>
-                        <FormControl sx={{ m: 1, width: '25ch' }} variant="outlined">
+                        <FormControl sx={{ m: 1, width: '25ch' }} variant="outlined" className="personlTraining__registrationForm__formFields__inputField">
                             <InputLabel htmlFor="outlined-adornment-password">Email</InputLabel>
                             <OutlinedInput
                                 id="outlined-adornment-password"
@@ -37,7 +37,7 @@ function PersonalTraining() {
                             />
                         </FormControl>
 
-                        <FormControl sx={{ m: 1, width: '25ch' }} variant="outlined">
+                        <FormControl sx={{ m: 1, width: '25ch' }} variant="outlined" className="personlTraining__registrationForm__formFields__inputField">
                             <InputLabel htmlFor="outlined-adornment-password">First Name</InputLabel>
                             <OutlinedInput
                                 id=""
@@ -54,7 +54,7 @@ function PersonalTraining() {
                             />
                         </FormControl>
 
-                        <FormControl sx={{ m: 1, width: '25ch' }} variant="outlined">
+                        <FormControl sx={{ m: 1, width: '25ch' }} variant="outlined" className="personlTraining__registrationForm__formFields__inputField">
                             <InputLabel htmlFor="outlined-adornment-password">Last Name</InputLabel>
                             <OutlinedInput
                                 id=""
@@ -71,7 +71,7 @@ function PersonalTraining() {
                             />
                         </FormControl>
                         
-                        <FormControl sx={{ m: 1, width: '25ch' }} variant="outlined">
+                        <FormControl sx={{ m: 1, width: '25ch' }} variant="outlined" className="personlTraining__registrationForm__formFields__inputField">
                             <InputLabel htmlFor="outlined-adornment-password">First Name</InputLabel>
                             <OutlinedInput
                                 id=""
@@ -92,7 +92,7 @@ function PersonalTraining() {
 
                 <div className="personlTraining__registrationForm__formAvatar">
                     <img src={require("../../assets/personaltraining2.png")} alt="" />
-                    <button>SUBMIT</button>
+                    {/* <button>SUBMIT</button> */}
                 </div>
             </div>
         </div>
