@@ -24,3 +24,15 @@
         transition: .3s ease-in-out;
         width: 51%;
         height: auto; }
+
+.personlTraining__bannerImage {
+  height: 400px;
+  width: 100%;
+  object-fit: cover; }
+
+.personlTraining__registrationForm {
+  display: flex;
+  flex-direction: row; }
+  .personlTraining__registrationForm__formFields form {
+    display: flex;
+    flex-direction: column; }

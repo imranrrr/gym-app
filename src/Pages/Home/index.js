@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from '../../components/Navbar/Navbar'
 import { Grid } from '@mui/material';
 import Carousel from './components/Carousel';
-import Footer from '../../components/Footer/Footer';
+import Page from "../../components/Page";
 
 function Home() {
   return (
