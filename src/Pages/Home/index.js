@@ -6,8 +6,8 @@ import Footer from '../../components/Footer/Footer';
 
 function Home() {
   return (
-    <>
-      <Navbar />
+    
+    <Page>
       <Grid className="home">
         <Carousel />
         <div className='home__images'>
@@ -22,8 +22,8 @@ function Home() {
           </div>
         </div>
       </Grid>
-      <Footer />
-    </>
+    </Page>
+
   );
 }
 
