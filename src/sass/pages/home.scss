@@ -1,7 +1,7 @@
 .home {
   margin: .5rem 2rem !important;
     &__images{
-        &__containerFirst {
+        &__container {
         display: flex;
         justify-content: center;
         height: 300px;
@@ -32,3 +32,16 @@
         }
     }
 }
+
+
+.slider {
+  margin-top: 1.5rem;
+  
+  &__images {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  }
+}
+

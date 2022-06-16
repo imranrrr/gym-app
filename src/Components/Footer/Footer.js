@@ -1,5 +1,4 @@
 import React from 'react';
-import './Footer.css';
 import { Grid, Link } from '@mui/material';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
