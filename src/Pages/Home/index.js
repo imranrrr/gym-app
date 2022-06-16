@@ -1,5 +1,4 @@
 import React from 'react';
-import Navbar from '../../components/Navbar/Navbar'
 import { Grid } from '@mui/material';
 import Carousel from './components/Carousel';
 import Page from "../../components/Page";
