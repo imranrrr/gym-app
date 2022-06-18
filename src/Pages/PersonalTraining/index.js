@@ -8,6 +8,8 @@ import InputLabel from "@mui/material/InputLabel";
 import OutlinedInput from "@mui/material/OutlinedInput";
 import IconButton from "@mui/material/IconButton";
 import DriveFolderUploadIcon from '@mui/icons-material/DriveFolderUpload';
+import { Button } from '@mui/material';
+
 function PersonalTraining() {
   const logoRef = useRef();
   const selectLogo = () => logoRef.current.click();
@@ -22,9 +24,11 @@ function PersonalTraining() {
         />
         <div className="personlTraining__registrationForm">
           <div className="personlTraining__registrationForm__formFields">
+            
             <form>
+              <h2 >Personal Training Form</h2>
               <FormControl
-                sx={{ m: 1, width: "25ch" }}
+                sx={{ m: 1, width: "300px" }}
                 variant="outlined"
                 className="personlTraining__registrationForm__formFields__inputField"
               >
@@ -50,7 +54,7 @@ function PersonalTraining() {
               </FormControl>
 
               <FormControl
-                sx={{ m: 1, width: "25ch" }}
+                sx={{ m: 1, width: "300px" }}
                 variant="outlined"
                 className="personlTraining__registrationForm__formFields__inputField"
               >
@@ -75,7 +79,7 @@ function PersonalTraining() {
                 />
               </FormControl>
               <FormControl
-                sx={{ m: 1, width: "25ch" }}
+                sx={{ m: 1, width: "300px" }}
                 variant="outlined"
                 className="personlTraining__registrationForm__formFields__inputField"
               >
@@ -101,7 +105,7 @@ function PersonalTraining() {
               </FormControl>
 
               <FormControl
-                sx={{ m: 1, width: "25ch" }}
+                sx={{ m: 1, width: "300px" }}
                 variant="outlined"
                 className="personlTraining__registrationForm__formFields__inputField"
               >
@@ -126,7 +130,7 @@ function PersonalTraining() {
                 />
 
                 <div className="personlTraining__registrationForm__formButton">
-                  <button>Submit</button>
+                  <Button variant="contained">Submit</Button>
                 </div>
               </FormControl>
             </form>

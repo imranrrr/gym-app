@@ -94,7 +94,7 @@ export default function PrimarySearchAppBar() {
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
-      <MenuItem onClick={handleMenuClose}><LogoutSharpIcon sx={{ fontSize: "18px", marginRight: "2px" }} /><Link to="/signin">Logout</Link></MenuItem>
+      <MenuItem onClick={handleMenuClose}><LogoutSharpIcon sx={{ fontSize: "18px", marginRight: "2px" }} /><Link to="/signin" style={{ textDecoration: "none", color: "black" }}>Logout</Link></MenuItem>
     </Menu>
   );
 
@@ -129,7 +129,8 @@ export default function PrimarySearchAppBar() {
             aria-label="open drawer"
             sx={{ display: { md: 'none', lg: 'none', sm: 'none', color: "white", fontSize: "15px" }, mr: 2 }}
           >
-            <MenuIcon />
+
+            <Link to="/" style={{ textDecoration: "none", color: "white" }}><MenuIcon /></Link>
           </IconButton>
           <IconButton
             size="large"
@@ -164,7 +165,7 @@ export default function PrimarySearchAppBar() {
             component="div"
             sx={{ display: { xs: 'none', sm: 'block', color: "white", fontSize: "15px" }, mr: 2 }}
           >
-            <Link to="/personal-training" style={{ textDecoration: "none", color: "white" }}>Personal Training</Link> 
+            <Link to="/personal-training" style={{ textDecoration: "none", color: "white" }}>Personal Training</Link>
           </IconButton>
           <IconButton
             variant="h6"

@@ -19,6 +19,8 @@ import ListItemText from '@mui/material/ListItemText';
 import { FitnessCenter } from '@material-ui/icons';
 import HomeIcon from '@mui/icons-material/Home';
 import LogoutIcon from '@mui/icons-material/Logout';
+import { Link } from "react-router-dom";
+
 
 
 const drawerWidth = 240;
@@ -103,7 +105,7 @@ export default function Sidebar() {
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar position="fixed" open={open} sx={{ bgcolor: "black", height:"48px" }}>
+      <AppBar position="fixed" open={open} sx={{ bgcolor: "black", height: "48px" }}>
         <Toolbar>
           <IconButton
             color="inherit"
@@ -111,7 +113,7 @@ export default function Sidebar() {
             onClick={handleDrawerOpen}
             edge="start"
             sx={{
-              marginRight: 5, marginBottom:2,
+              marginRight: 5, marginBottom: 2,
               ...(open && { display: 'none' }),
             }}
           >
@@ -123,14 +125,14 @@ export default function Sidebar() {
         </Toolbar>
       </AppBar>
       <Drawer variant="permanent" open={open}>
-        <DrawerHeader sx={{marginTop:"-1rem"}}>
-          <IconButton onClick={handleDrawerClose} sx={{marginTop:"1rem"}}>
+        <DrawerHeader sx={{ marginTop: "-1rem" }}>
+          <IconButton onClick={handleDrawerClose} sx={{ marginTop: "1rem" }}>
             {theme.direction === 'rtl' ? <ChevronRightIcon /> : <ChevronLeftIcon />}
           </IconButton>
         </DrawerHeader>
         <Divider />
         <List>
-          {['Home', 'Logout'].map((text, index) => (
+          {[<Link to="/" style={{ textDecoration: "none", color: "black" }}>Home</Link>, <Link to="/signin" style={{ textDecoration: "none", color: "black" }}>Logout</Link>].map((text, index) => (
             <ListItem key={text} disablePadding sx={{ display: 'block' }}>
               <ListItemButton
                 sx={{
@@ -146,7 +148,7 @@ export default function Sidebar() {
                     justifyContent: 'center',
                   }}
                 >
-                  {index % 2 === 0 ? <HomeIcon /> : <LogoutIcon />}
+                  {index % 2 === 0 ? <Link to="/" style={{ textDecoration: "none", color: "black" }}><HomeIcon /></Link> : <Link to="/signin" style={{ textDecoration: "none", color: "black" }}><LogoutIcon /></Link>}
                 </ListItemIcon>
                 <ListItemText primary={text} sx={{ opacity: open ? 1 : 0 }} />
               </ListItemButton>

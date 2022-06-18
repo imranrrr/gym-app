@@ -1,9 +1,10 @@
 .personlTraining {
-
+  margin: 5rem 2rem;
   &__bannerImage {
     height: 400px;
     width: 100%;
     object-fit: cover;
+    border-radius: 10px;
 
     @media (max-width: 768px) {
       height: 150px;
@@ -33,20 +34,24 @@
       }
 
       form {
-        width: 70%;
-        padding: 90px 100px;
+        width: 300px;
+        padding: 0px 100px;
         display: flex;
         text-align: center;
         justify-content: center;
         flex-direction: column;
+        // border: 1px solid black;
 
         @media (max-width: 768px) {
           display: flex;
           align-items: center;
           justify-content: center;
-          width: 125%;
+          width: 300px;
           padding: 10px 10px;
           margin-bottom: 10px;
+          h2 {
+            width: 100%;
+          }
         }
       }
 
@@ -55,15 +60,18 @@
       }
     }
 
-    &__formButton > button {
+    &__formButton > Button {
       cursor: pointer;
-      margin-top: 30px;
-      height: 2.5rem;
-      border: 1px solid black;
+      margin-top: 1rem;
       width: 100%;
-      background-color: black;
+      border-radius: 3px;
+      font-weight: bold;
+      text-transform: capitalize;
       color: white;
-      border-radius: 5px;
+      background-color: black;
+      &:hover {
+        background-color: black;
+      }
 
       @media (max-width: 768px) {
         width: 100%;
@@ -77,6 +85,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      // border: 1px solid black;
       @media (max-width: 768px) {
         display: flex;
         align-items: center;

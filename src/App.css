@@ -33,74 +33,80 @@
     object-fit: cover;
     border-radius: 10px; }
 
-.personlTraining__bannerImage {
-  height: 400px;
-  width: 100%;
-  object-fit: cover; }
-  @media (max-width: 768px) {
-    .personlTraining__bannerImage {
-      height: 150px;
-      width: 100%;
-      margin-bottom: 6px; } }
-
-.personlTraining__registrationForm {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap; }
-  @media (max-width: 768px) {
-    .personlTraining__registrationForm {
-      flex-direction: column-reverse; } }
-  .personlTraining__registrationForm__formFields {
-    width: 50%; }
+.personlTraining {
+  margin: 5rem 2rem; }
+  .personlTraining__bannerImage {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px; }
     @media (max-width: 768px) {
-      .personlTraining__registrationForm__formFields {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+      .personlTraining__bannerImage {
+        height: 150px;
         width: 100%;
-        padding: 10px 0px; } }
-    .personlTraining__registrationForm__formFields form {
-      width: 70%;
-      padding: 90px 100px;
-      display: flex;
-      text-align: center;
-      justify-content: center;
-      flex-direction: column; }
+        margin-bottom: 6px; } }
+  .personlTraining__registrationForm {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    @media (max-width: 768px) {
+      .personlTraining__registrationForm {
+        flex-direction: column-reverse; } }
+    .personlTraining__registrationForm__formFields {
+      width: 50%; }
       @media (max-width: 768px) {
-        .personlTraining__registrationForm__formFields form {
+        .personlTraining__registrationForm__formFields {
           display: flex;
           align-items: center;
           justify-content: center;
-          width: 125%;
-          padding: 10px 10px;
-          margin-bottom: 10px; } }
-    .personlTraining__registrationForm__formFields__inputField {
-      width: 100% !important; }
-  .personlTraining__registrationForm__formButton > button {
-    cursor: pointer;
-    margin-top: 30px;
-    height: 2.5rem;
-    border: 1px solid black;
-    width: 100%;
-    background-color: black;
-    color: white;
-    border-radius: 5px; }
-    @media (max-width: 768px) {
-      .personlTraining__registrationForm__formButton > button {
-        width: 100%; } }
-  .personlTraining__registrationForm__formAvatar {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    @media (max-width: 768px) {
-      .personlTraining__registrationForm__formAvatar {
+          width: 100%;
+          padding: 10px 0px; } }
+      .personlTraining__registrationForm__formFields form {
+        width: 300px;
+        padding: 0px 100px;
         display: flex;
-        align-items: center;
+        text-align: center;
         justify-content: center;
-        width: 100%;
-        font-size: 5rem !important; } }
+        flex-direction: column; }
+        @media (max-width: 768px) {
+          .personlTraining__registrationForm__formFields form {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 300px;
+            padding: 10px 10px;
+            margin-bottom: 10px; }
+            .personlTraining__registrationForm__formFields form h2 {
+              width: 100%; } }
+      .personlTraining__registrationForm__formFields__inputField {
+        width: 100% !important; }
+    .personlTraining__registrationForm__formButton > Button {
+      cursor: pointer;
+      margin-top: 1rem;
+      width: 100%;
+      border-radius: 3px;
+      font-weight: bold;
+      text-transform: capitalize;
+      color: white;
+      background-color: black; }
+      .personlTraining__registrationForm__formButton > Button:hover {
+        background-color: black; }
+      @media (max-width: 768px) {
+        .personlTraining__registrationForm__formButton > Button {
+          width: 100%; } }
+    .personlTraining__registrationForm__formAvatar {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      @media (max-width: 768px) {
+        .personlTraining__registrationForm__formAvatar {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          font-size: 5rem !important; } }
 
 .footer {
   display: flex;
@@ -249,7 +255,10 @@
           margin-left: 5px; }
       .store__products__details__addToCart {
         text-transform: capitalize !important;
-        height: 30px !important; }
+        height: 30px !important;
+        color: white !important;
+        background-color: black !important;
+        font-weight: bold !important; }
 
 .subtotal {
   border: 1px solid lightgray;
@@ -270,7 +279,11 @@
     border-radius: 3px;
     text-transform: capitalize;
     font-weight: bold;
-    margin-top: 1rem; }
+    margin-top: 1rem;
+    color: white;
+    background-color: black; }
+    .subtotal Button:hover {
+      background-color: black !important; }
     @media (max-width: 400px) {
       .subtotal Button {
         width: 100%; } }
@@ -336,7 +349,8 @@
       text-transform: capitalize !important;
       font-weight: bold !important;
       margin-bottom: 1rem !important;
-      width: 300px; }
+      width: 300px;
+      background-color: black !important; }
     .signIn__formContainer__link {
       color: black;
       text-decoration: none;
@@ -371,7 +385,9 @@
       text-transform: capitalize !important;
       font-weight: bold !important;
       margin-bottom: 1rem !important;
-      width: 300px; }
+      width: 300px;
+      color: white !important;
+      background-color: black !important; }
     .signUp__formContainer__link {
       color: black;
       text-decoration: none;
@@ -391,7 +407,8 @@
       font-weight: bold;
       font-size: 16px;
       margin-bottom: 1rem;
-      padding: .5rem 1.3rem; }
+      padding: .5rem 1.3rem;
+      background-color: black !important; }
   .productsTable__description__size {
     display: flex;
     font-weight: bold;
@@ -433,7 +450,8 @@
     text-transform: capitalize !important;
     font-weight: bold !important;
     height: 30px;
-    padding: 0px 10px !important; }
+    padding: 0px 10px !important;
+    background-color: black !important; }
   .addProductModal__container__buttons__button-2 {
     background-color: lightgray !important;
     color: black !important;
