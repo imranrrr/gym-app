@@ -1,0 +1,76 @@
+.about {
+  margin: 4rem 2rem 5rem 2rem;
+  img {
+    height: 400px;
+    object-fit: cover;
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: 10px;
+  }
+  &__details {
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    box-shadow: 0 1rem 1rem rgba($color: #000000, $alpha: 0.5);
+    &__aboutUs {
+      h2 {
+        margin-bottom: 5px;
+        margin-top: 8px;
+      }
+      p {
+        margin: 0 1rem;
+        font-size: 15px;
+      }
+    }
+    &__location {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      h2 {
+        margin-bottom: 5px;
+      }
+      &__address {
+        margin:  0 1rem;
+        display: flex;
+        align-items: center;
+        span {
+          margin-left: 1rem;
+        }
+        &__detail {
+          display: flex;
+          flex-direction: column;
+          margin-left: 3.6rem;
+          span {
+            margin-bottom: .3rem;
+          }
+        }
+      }
+      &__map {
+        margin-left: rem;
+      }
+    } 
+    &__contactUs {
+      h2 {
+        margin-bottom: 5px;
+      }
+      &__phone {
+        display: flex;
+        align-items: center;
+        margin:  .5rem 1rem;
+        span {
+          margin-left: 1rem;
+        }
+      }
+      &__email {
+        display: flex;
+        align-items: center;
+        margin:  0 1rem;
+        span {
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+}

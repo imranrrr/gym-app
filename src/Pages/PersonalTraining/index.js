@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import EmailIcon from "@mui/icons-material/Email";
 import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
 import PersonIcon from "@mui/icons-material/Person";
-import Page from "../../components/Page";
+import Page from "../../Components/Page";
 import FormControl from "@mui/material/FormControl";
 import InputLabel from "@mui/material/InputLabel";
 import OutlinedInput from "@mui/material/OutlinedInput";
@@ -74,7 +74,6 @@ function PersonalTraining() {
                   label="First Name"
                 />
               </FormControl>
-
               <FormControl
                 sx={{ m: 1, width: "25ch" }}
                 variant="outlined"
@@ -127,7 +126,7 @@ function PersonalTraining() {
                 />
 
                 <div className="personlTraining__registrationForm__formButton">
-                  <button>SUBMIT</button>
+                  <button>Submit</button>
                 </div>
               </FormControl>
             </form>

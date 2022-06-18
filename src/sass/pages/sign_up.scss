@@ -1,0 +1,43 @@
+.signUp {
+  display: flex;
+  justify-content: space-between;
+  &__imageContainer {
+    min-width: 48%;
+    @media (max-width: 650px) {
+      display: none;
+    }
+    &__image {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  &__formContainer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-width: 49%;
+    padding: 1rem;
+    margin-top: 5rem;
+
+    @media (max-width: 650px) {
+      width: 100%;
+      margin-top: 1rem;
+    }
+    &__input {
+      margin-bottom: 1rem;
+    }
+    &__button {
+      text-transform: capitalize !important;
+      font-weight: bold !important;
+      margin-bottom: 1rem !important;
+      width: 300px;
+    }
+    &__link {
+      color: black;
+      // font-weight: bold;
+      text-decoration: none;
+      margin-right: 240px;
+    }
+  }
+}

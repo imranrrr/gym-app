@@ -12,8 +12,9 @@ import SearchIcon from '@mui/icons-material/Search';
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import MoreIcon from '@mui/icons-material/MoreVert';
 import { FitnessCenter } from '@material-ui/icons';
-import './Navbar.css';
 import LogoutSharpIcon from '@mui/icons-material/LogoutSharp';
+import { Link } from "react-router-dom";
+
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -93,7 +94,7 @@ export default function PrimarySearchAppBar() {
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
-      <MenuItem onClick={handleMenuClose}><LogoutSharpIcon sx={{ fontSize: "18px", marginRight: "2px" }} /> Logout</MenuItem>
+      <MenuItem onClick={handleMenuClose}><LogoutSharpIcon sx={{ fontSize: "18px", marginRight: "2px" }} /><Link to="/signin">Logout</Link></MenuItem>
     </Menu>
   );
 
@@ -119,7 +120,7 @@ export default function PrimarySearchAppBar() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" sx={{ bgcolor: "black" }}>
+      <AppBar position="static" sx={{ bgcolor: "black", position: "fixed", zIndex: "100", top: "0" }}>
         <Toolbar style={{ minHeight: "48px" }}>
           <IconButton
             size="large"
@@ -147,7 +148,7 @@ export default function PrimarySearchAppBar() {
             component="div"
             sx={{ display: { xs: 'none', sm: 'block', color: "white", fontSize: "15px" }, mr: 2 }}
           >
-            Home
+            <Link to="/" style={{ textDecoration: "none", color: "white" }}>Home</Link>
           </IconButton>
           <IconButton
             variant="h6"
@@ -155,7 +156,7 @@ export default function PrimarySearchAppBar() {
             component="div"
             sx={{ display: { xs: 'none', sm: 'block', color: "white", fontSize: "15px" }, mr: 2 }}
           >
-            Store
+            <Link to="/store" style={{ textDecoration: "none", color: "white" }}>Store</Link>
           </IconButton>
           <IconButton
             variant="h6"
@@ -163,7 +164,7 @@ export default function PrimarySearchAppBar() {
             component="div"
             sx={{ display: { xs: 'none', sm: 'block', color: "white", fontSize: "15px" }, mr: 2 }}
           >
-            Personal Training
+            <Link to="/personal-training" style={{ textDecoration: "none", color: "white" }}>Personal Training</Link> 
           </IconButton>
           <IconButton
             variant="h6"
@@ -171,7 +172,7 @@ export default function PrimarySearchAppBar() {
             component="div"
             sx={{ display: { xs: 'none', sm: 'block', color: "white", fontSize: "15px" }, mr: 2 }}
           >
-            About
+            <Link to="/about" style={{ textDecoration: "none", color: "white" }}>About</Link>
           </IconButton>
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
