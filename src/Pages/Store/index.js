@@ -1,5 +1,5 @@
 import React from 'react';
-import Page from '../../Components/Page/Page';
+import Page from '../../Components/Page';
 import { Link } from "react-router-dom";
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import { Grid, Button } from '@mui/material';
@@ -7,7 +7,7 @@ import { Grid, Button } from '@mui/material';
 const Store = () => {
   return (
     <Page>
-      <Grid style={{marginTop:"4rem"}}>
+      <Grid style={{ marginTop: "4rem" }}>
         <div className='container'>
           <h2>Our Store</h2>
           <Link to="/cart" className='container__cart' ><span>0</span><ShoppingCartOutlinedIcon style={{ fontSize: "25px" }} /></Link>

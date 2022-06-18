@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid } from '@mui/material';
 import Carousel from './components/Carousel';
-import Page from "../../components/Page";
+import Page from "../../Components/Page";
 
 function Home() {
   return (

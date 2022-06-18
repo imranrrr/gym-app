@@ -1,5 +1,5 @@
 import React from 'react';
-import Page from '../../Components/Page/Page';
+import Page from '../../Components/Page';
 import { Grid, Link } from '@mui/material';
 import PhoneIcon from '@mui/icons-material/Phone';
 import MailIcon from '@mui/icons-material/Mail';

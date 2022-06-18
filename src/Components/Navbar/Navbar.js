@@ -164,7 +164,7 @@ export default function PrimarySearchAppBar() {
             component="div"
             sx={{ display: { xs: 'none', sm: 'block', color: "white", fontSize: "15px" }, mr: 2 }}
           >
-            Personal Training
+            <Link to="/personal-training" style={{ textDecoration: "none", color: "white" }}>Personal Training</Link> 
           </IconButton>
           <IconButton
             variant="h6"

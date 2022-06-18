@@ -1,6 +1,6 @@
 import React from 'react';
 import { Grid } from '@mui/material';
-import Page from '../../../../Components/Page/Page';
+import Page from '../../../../Components/Page';
 import Subtotal from '../Subtotal';
 import Product from '../Product';
 
