@@ -42,9 +42,9 @@ const rows = [
   createData(),
 ];
 
-export default function Product() {
+export default function ProductsTables() {
   return (
-    <TableContainer component={Paper} >
+    <TableContainer component={Paper}>
       <Table sx={{ minWidth: 700 }} aria-label="customized table">
         <TableHead>
           <TableRow>
@@ -52,23 +52,38 @@ export default function Product() {
             <StyledTableCell align="left">Product</StyledTableCell>
             <StyledTableCell align="left">Description</StyledTableCell>
             <StyledTableCell align="left">Quantity</StyledTableCell>
-            <StyledTableCell align="left">Size</StyledTableCell>
             <StyledTableCell align="left">Price</StyledTableCell>
-            <StyledTableCell align="left">Remove</StyledTableCell>
+            <StyledTableCell align="left">Size</StyledTableCell>
+            <StyledTableCell align="left">Delete</StyledTableCell>
           </TableRow>
         </TableHead>
         <TableBody>
           {rows.map((row) => (
             <StyledTableRow key={row.name}>
-              <StyledTableCell component="th" scope="row">
-                1
+              <StyledTableCell component="th" scope="row">1</StyledTableCell>
+              <StyledTableCell align="left">
+                <img src={require("../../../../assets/gym-shirts-1.webp")} alt="" className='productsTable__description__details__image' />
               </StyledTableCell>
-              <StyledTableCell align="left"><img src={require("../../../../assets/gym-shirts-1.webp")} alt="" className='productsTable__description__details__image' /></StyledTableCell>
-              <StyledTableCell align="left"><p>Black Performance Tee With Grey Mesh Shoulder Panel</p></StyledTableCell>
-              <StyledTableCell align="left"><p className='productsTable__description__quantity'>1</p></StyledTableCell>
-              <StyledTableCell align="left"><p className='productsTable__description__size'><span>S</span></p></StyledTableCell>
-              <StyledTableCell align="left"><p className='productsTable__description__price'>31<span>$</span></p></StyledTableCell>
-              <StyledTableCell align="left"><Button className='productsTable__description__removeButton' variant='contained' color="error">Remove</Button></StyledTableCell>
+              <StyledTableCell align="left">
+                <p>Black Performance Tee With Grey Mesh Shoulder Panel</p>
+              </StyledTableCell>
+              <StyledTableCell align="left">
+                <p className='productsTable__description__quantity'>1</p>
+              </StyledTableCell>
+              <StyledTableCell align="left">
+                <p className='productsTable__description__price'>31<span>$</span></p>
+              </StyledTableCell>
+              <StyledTableCell align="left" >
+                <div className='productsTable__description__size' >
+                  <div>S:<span>5</span></div> |
+                  <div>M:<span>5</span></div> |
+                  <div>L:<span>5</span></div> |
+                  <div>XL:<span>5</span></div>
+                </div>
+              </StyledTableCell>
+              <StyledTableCell align="left">
+                <Button className='productsTable__description__removeButton' variant='contained' color="error">Delete</Button>
+              </StyledTableCell>
             </StyledTableRow>
           ))}
         </TableBody>

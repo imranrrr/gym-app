@@ -8,6 +8,7 @@ import Store from './Pages/Store';
 import SignIn from './Pages/SignIn';
 import SignUp from './Pages/SignUp';
 import Cart from '../src/Pages/Store/components/Cart/';
+import ProductsTable from './admin/ProductsTable';
 
 function App() {
   return (
@@ -20,8 +21,9 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/store" element={<Store />} />
         <Route path="/cart" element={<Cart />} />
-      </Routes >
-    </div >
+        <Route path="/productstable" element={<ProductsTable />} />
+      </Routes>
+    </div>
   );
 }
 

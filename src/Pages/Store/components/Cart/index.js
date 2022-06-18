@@ -7,7 +7,7 @@ import Product from '../Product';
 const Cart = () => {
   return (
     <Page>
-      <Grid >
+      <Grid sx={{marginTop:"4rem", marginRight:"2rem", marginLeft:"2rem", marginBottom:"5rem"}} >
         <div className='cart'>
           <div className='cart__image'>
             <img src={require("../../../../assets/gym-cart-1.jpg")} alt='' />

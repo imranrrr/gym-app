@@ -1,0 +1,40 @@
+.addProductModal {
+  // margin-top: 5rem;
+  outline: none; 
+  border: none; 
+  border-radius: 5px; 
+  background-color: #F3F3F3;
+  display: flex;
+  justify-content: center; 
+  padding-top: 0;
+  &__container {
+    h2 {
+      text-align: center;
+    }
+    &__input {
+      margin-bottom: 1rem;  
+    }
+    &__inputSize {
+      display: flex;
+      margin-bottom: 1rem;
+      justify-content: space-between;
+    }
+    &__buttons {
+      &__button-1 {
+        text-transform: capitalize !important;
+        font-weight: bold !important;
+        height: 30px;
+        padding: 0px 10px !important;
+      }
+      &__button-2 {
+        background-color: lightgray !important;
+        color: black !important;
+        font-weight:  bold !important;
+        text-transform: capitalize !important;
+        margin-left: 5px !important;
+        height: 30px;
+        padding: 0px 10px !important;
+      }
+    }
+  }
+}

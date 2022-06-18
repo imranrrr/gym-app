@@ -7,7 +7,7 @@ import { Grid, Button } from '@mui/material';
 const Store = () => {
   return (
     <Page>
-      <Grid>
+      <Grid style={{marginTop:"4rem"}}>
         <div className='container'>
           <h2>Our Store</h2>
           <Link to="/cart" className='container__cart' ><span>0</span><ShoppingCartOutlinedIcon style={{ fontSize: "25px" }} /></Link>
@@ -23,18 +23,6 @@ const Store = () => {
                 <span>M</span>
                 <span>L</span>
                 <span>XL</span>
-              </div>
-              <div className='store__products__details__color'>
-                <p>Select Color:</p>
-                <label> Black
-                  <input type="radio" />
-                </label>
-                <label> Blue
-                  <input type="radio" />
-                </label>
-                <label> Green
-                  <input type="radio" />
-                </label>
               </div>
               <div className='store__products__details__price'>
                 <p>Price:</p>
@@ -54,18 +42,6 @@ const Store = () => {
                 <span>L</span>
                 <span>XL</span>
               </div>
-              <div className='store__products__details__color'>
-                <p>Select Color:</p>
-                <label> Black
-                  <input type="radio" />
-                </label>
-                <label> Blue
-                  <input type="radio" />
-                </label>
-                <label> Green
-                  <input type="radio" />
-                </label>
-              </div>
               <div className='store__products__details__price'>
                 <p>Price:</p>
                 <span>31 $</span>
@@ -84,18 +60,6 @@ const Store = () => {
                 <span>L</span>
                 <span>XL</span>
               </div>
-              <div className='store__products__details__color'>
-                <p>Select Color:</p>
-                <label> Black
-                  <input type="radio" />
-                </label>
-                <label> Blue
-                  <input type="radio" />
-                </label>
-                <label> Green
-                  <input type="radio" />
-                </label>
-              </div>
               <div className='store__products__details__price'>
                 <p>Price:</p>
                 <span>31 $</span>
@@ -113,18 +77,6 @@ const Store = () => {
                 <span>M</span>
                 <span>L</span>
                 <span>XL</span>
-              </div>
-              <div className='store__products__details__color'>
-                <p>Select Color:</p>
-                <label> Black
-                  <input type="radio" />
-                </label>
-                <label> Blue
-                  <input type="radio" />
-                </label>
-                <label> Green
-                  <input type="radio" />
-                </label>
               </div>
               <div className='store__products__details__price'>
                 <p>Price:</p>
